@@ -1,4 +1,7 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+import * as dotenv from "dotenv";
+dotenv.config();
+
 const config = {
 	rootDir: './',
     displayName: 'Core',

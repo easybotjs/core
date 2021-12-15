@@ -1,7 +1,5 @@
 import { EasyBot } from "../dist/index.js";
-import {token} from "./auth.js";
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { Interaction } from "discord.js";
 import { jest } from "@jest/globals";
 import { registerCommands } from "../dist/util/registerCommands.js";
 
@@ -9,7 +7,7 @@ jest.setTimeout(30000);
 
 
 const bot = new EasyBot({
-	token: token,
+	token: process.env.DISCORD_TOKEN,
 	prefix: "!",
 	intents: ["GUILDS", "GUILD_INTEGRATIONS"]
 });
