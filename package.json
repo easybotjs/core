@@ -9,7 +9,8 @@
     "scripts": {
         "pretest": "npm run build",
         "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --pass-with-no-tests",
-        "build": "tsc --build tsconfig.json"
+        "build": "tsc --build tsconfig.json",
+        "clean": "rimraf dist"
     },
     "module": "./dist/index.js",
     "typings": "./dist/index.d.ts",
@@ -32,6 +33,7 @@
         "@discordjs/builders": "^0.9.0",
         "cross-env": "^7.0.3",
         "dotenv": "^10.0.0",
-        "jest": "^27.4.5"
+        "jest": "^27.4.5",
+        "rimraf": "^3.0.2"
     }
 }
