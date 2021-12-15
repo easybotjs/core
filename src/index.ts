@@ -1,0 +1,1 @@
+export { EasyBot } from './structures/EasyBot.js';

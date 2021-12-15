@@ -1,0 +1,33 @@
+{
+    "name": "@easybotjs/core",
+    "version": "0.0.6",
+    "description": "",
+    "type": "module",
+    "license": "GNU GPLv3",
+    "author": "McCoughskii",
+    "repository": "https://github.com/easybotjs/EasyBot",
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1",
+        "build": "tsc --build tsconfig.json"
+    },
+    "module": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "exports": {
+        "import": "./dist/index.js"
+    },
+    "directories": {
+        "lib": "src",
+        "test": "__tests__"
+    },
+    "dependencies": {
+        "@discordjs/rest": "^0.1.0-canary.0",
+        "discord-api-types": "^0.20.2",
+        "discord.js": "^13.3.1"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@discordjs/builders": "^0.9.0"
+    }
+}
