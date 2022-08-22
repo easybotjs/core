@@ -30,7 +30,7 @@
         "dist"
     ],
     "devDependencies": {
-        "@discordjs/builders": "^0.9.0",
+        "@discordjs/builders": "^1.2.0",
         "cross-env": "^7.0.3",
         "dotenv": "^10.0.0",
         "jest": "^27.4.5",
